@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*1rem = 10px, 10px/16px = 62.5%*/ }
+
+body {
+  background-color: goldenrod;
+  color: black; }
+
+.container {
+  display: grid; }
+
+.nav-bar {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  position: fixed;
+  width: 20rem; }
+  .nav-bar--logo {
+    height: 20rem;
+    width: 20rem; }
+  .nav-bar--mainHeader {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 3rem; }
+  .nav-bar--navigationLinks {
+    list-style: none; }
+    .nav-bar--navigationLinks li a {
+      text-decoration: none;
+      color: black;
+      line-height: 5rem; }
+  .nav-bar--icon1 {
+    color: #3b5998;
+    margin-right: 2rem; }
+  .nav-bar--icon2 {
+    color: #405de6; }
+
+.main {
+  display: grid;
+  grid-column: 2 / span 3;
+  grid-row: 1 /5;
+  margin-left: 26rem;
+  background-color: pink; }
+
+.main--acc {
+  display: grid;
+  grid-column: 2 / span 3;
+  grid-row: 1 /5;
+  margin-left: 26rem;
+  height: 100vh;
+  background-color: pink; }
+
+footer {
+  padding: 1rem 1rem;
+  border: 2px solid black;
+  display: flex;
+  grid-column: 1 / span 4;
+  grid-row: 5 / 6; }
+
+.companyInfo--header {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 2rem; }
+
+.companyInfo--bio {
+  width: 60%; }
+
+.companyContact--header {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 2rem; }
+
+.companyContact--phone {
+  text-decoration: underline; }
+
+.companyContact--email {
+  text-decoration: underline; }
+
+.companyInstagram--header {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 2rem; }
+
+.companyInstagram--bio {
+  width: 60%; }
+
+.main--topSection {
+  position: relative; }
+
+.main--mainImage {
+  height: 96vh;
+  width: 100%; }
+
+.main--helpfulHints {
+  color: yellow;
+  font-size: 10rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.main--tipsTricks {
+  display: grid;
+  grid-template-areas: "head head" "column column";
+  border: 0.5rem solid black;
+  border-radius: 150px;
+  margin: 5rem; }
+  .main--tipsTricks--title {
+    grid-area: 1 / span 2;
+    text-align: center;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center; }
+  .main--tipsTricks--header {
+    text-decoration: underline;
+    padding: 1rem; }
+  .main--tipsTricks--first {
+    grid-area: 2/1;
+    display: grid;
+    justify-content: center;
+    align-content: center; }
+    .main--tipsTricks--first-header {
+      text-decoration: underline;
+      font-weight: 700;
+      font-size: 2rem;
+      padding-bottom: 1rem; }
+    .main--tipsTricks--first-text {
+      padding-bottom: 1rem; }
+    .main--tipsTricks--first-image {
+      height: 40rem;
+      width: 50rem; }
+  .main--tipsTricks--sidebar--story {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    padding: 2rem; }
+  .main--tipsTricks--sidebar--text {
+    width: max-content;
+    padding-left: 2rem; }
+    .main--tipsTricks--sidebar--text--subhead {
+      text-decoration: underline;
+      font-size: 2rem; }
+    .main--tipsTricks--sidebar--text--description {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+  .main--tipsTricks--sidebar-image {
+    height: 20rem;
+    width: 20rem; }
+
+.service {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(4, auto);
+  margin: 10rem 5rem; }
+  .service--image {
+    max-width: 20rem;
+    max-height: 30rem; }
+
+.acc-title {
+  text-align: center;
+  margin-bottom: 10rem;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 5rem;
+  margin-top: 5rem; }
+
+.products {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 100rem;
+  border-top: solid 2px blue;
+  border-bottom: solid 2px blue;
+  background-color: white; }
+
+.item {
+  width: 50rem;
+  text-align: center;
+  margin: 5rem 0rem; }
+  .item:not(:last-child) {
+    margin-right: 1rem; }
+  .item--image {
+    max-width: 30rem;
+    max-height: 40rem;
+    margin-bottom: 1rem; }
+  .item--name {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+  .item--description {
+    text-align: justify;
+    padding: 0rem 5rem;
+    margin-bottom: 1rem; }
